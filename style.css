@@ -224,3 +224,44 @@ body {
 .black {
     background-color: black;
 }
+
+.popup-bg {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background-color: #00000088;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 400px;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        padding: 20px;
+        width: 120px;
+        background-color: #8D39C0;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.popup-bg.show {
+    opacity: 1;
+    pointer-events: all;
+}

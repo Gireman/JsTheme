@@ -115,8 +115,23 @@
                         Пароль:
                         <input type="password" class="input" id="password">
                     </label>
-                    <input type="button" value="Войти" class="auth__btn">
+                    <input type="button" value="Войти" class="auth__btn" onclick="togglePopup()">
                 </form>
+
+                <div class="popup-bg">
+                    <div class="popup">
+                        <p>
+                            Имя: <span class="name"></span>
+                        </p>
+                        <p>
+                            Почта: <span class="email"></span>
+                        </p>
+                        <p>
+                            Пароль: <span class="password"></span>
+                        </p>
+                        <button onclick="togglePopup()">Да</button>
+                    </div>
+                </div>
 
                 <form class="settings__form">
                     <h3 class="settings__label">Настройки</h3>
